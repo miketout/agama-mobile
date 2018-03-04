@@ -676,9 +676,14 @@ class App extends React.Component {
               <i className="fa fa-warning error"></i> <span className="error">{ translate('DASHBOARD.PROXY_ERROR') }</span>
             </div>
           }
-          <Balance { ...this.state } />
+          { !this.state.proxyError &&
+            !this.state.conError &&
+            <Balance { ...this.state } />
+          }
           { this.state.auth &&
             this.state.activeSection === 'dashboard' &&
+            !this.state.proxyError &&
+            !this.state.conError &&
             <SendReceive
               { ...this.state }
               changeActiveSection={ this.changeActiveSection }

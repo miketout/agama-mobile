@@ -169,6 +169,28 @@ export let electrumServers = {
       'electrum2.cipig.net:10004'
     ],
   },
+  gadebt: { // !estimatefee
+    ip: '159.89.4.171',
+    port: 10090,
+    proto: 'tcp',
+    txfee: 10000,
+    abbr: 'GADEBT',
+    serverList: [
+      '159.89.4.171:10090',
+      '159.89.4.171:10090'
+    ],
+  },
+  gacredit: { // !estimatefee
+    ip: '159.89.4.171',
+    port: 10089,
+    proto: 'tcp',
+    txfee: 10000,
+    abbr: 'GACREDIT',
+    serverList: [
+      '159.89.4.171:10089',
+      '159.89.4.171:10089'
+    ],
+  },
   komodo: { // !estimatefee
     ip: 'electrum1.cipig.net',
     port: 10001,

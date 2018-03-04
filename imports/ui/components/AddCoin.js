@@ -63,7 +63,7 @@ class AddCoin extends React.Component {
     let _coins = this.props.coins;
     let _items = [];
 
-    _items.push(
+    /*_items.push(
       <span
         className={ _coins.kmd ? 'disabled' : '' }
         key={ `addcoin-kmd` }>
@@ -78,7 +78,7 @@ class AddCoin extends React.Component {
           }        
         </div>
       </span>
-    );
+    );*/
 
     for (let i = 0; i < coinsList.length; i++) {
       const key = coinsList[i];
@@ -118,7 +118,7 @@ class AddCoin extends React.Component {
 
     return (
       <div className="coins-list-shortcuts">
-        <div
+        {/*<div
           onClick={ () => this.addCoin('kmd+chips') }
           className="combination margin-left-25">
           <img
@@ -152,7 +152,7 @@ class AddCoin extends React.Component {
             { translate('ADD_COIN.ADD_ALL_COINS') }
             </span>
           </button>
-        </div>
+        </div>*/}
       </div>
     );
   }

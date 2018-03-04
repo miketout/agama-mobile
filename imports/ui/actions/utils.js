@@ -136,6 +136,8 @@ export const isAssetChain = (coin) => {
       coin === 'WLC' ||
       coin === 'MNZ' ||
       coin === 'BTCH' ||
+      coin === 'GADEBT' ||
+      coin === 'GACREDIT' ||
       coin === 'komodo' ||
       coin === 'KMD') {
     return true;
@@ -163,46 +165,8 @@ export function getLocalStorageVar(name) {
 }
 
 export const coinsList = [
-  'CHIPS',
-  'SUPERNET',
-  'REVS',
-  'PANGEA',
-  'DEX',
-  'JUMBLR',
-  'BET',
-  'CRYPTO',
-  'COQUI',
-  'HODL',
-  'SHARK',
-  'MSHARK',
-  'BOTS',
-  'MGW',
-  'BTCH',
-  //'MVP',
-  'KV',
-  //'CEAL',
-  'MESH',
-  'WLC',
-  'MNZ',
-  'DOGE',
-  'DGB',
-  'BTG',
-  'BLK',
-  'BCH',
-  'FAIR',
-  'VIA',
-  'MONA',
-  'ZEC',
-  'HUSH',
-  'ARG',
-  'DASH',
-  'CRW',
-  'VTC',
-  'LTC',
-  'NMC',
-  'SIB',
-  'XMY',
-  'ZCL'
+  'GADEBT',
+  'GACREDIT'
 ];
 
 export const explorers = {
@@ -223,6 +187,8 @@ export const explorers = {
   CHIPS: 'http://chips1.explorer.supernet.org',
   COQUI: 'https://explorer.coqui.cash',
   MNZ: 'https://www.mnzexplorer.com',
+  GADEBT: 'http://78.47.108.168:3001',
+  GACREDIT: 'http://78.47.108.168:3001',
 };
 
 export const convertURIToImageData = (URI) => {
