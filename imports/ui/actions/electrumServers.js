@@ -175,10 +175,7 @@ export let electrumServers = {
     proto: 'tcp',
     txfee: 10000,
     abbr: 'GADEBT',
-    serverList: [
-      '159.89.4.171:10090',
-      '159.89.4.171:10090'
-    ],
+    serverList: 'none',
   },
   gacredit: { // !estimatefee
     ip: '159.89.4.171',
@@ -186,10 +183,7 @@ export let electrumServers = {
     proto: 'tcp',
     txfee: 10000,
     abbr: 'GACREDIT',
-    serverList: [
-      '159.89.4.171:10089',
-      '159.89.4.171:10089'
-    ],
+    serverList: 'none',
   },
   komodo: { // !estimatefee
     ip: 'electrum1.cipig.net',
