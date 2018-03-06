@@ -60,6 +60,10 @@ App.accessRule('http://WIRELESS.explorer.supernet.org');
 App.accessRule('http://CHIPS1.explorer.supernet.org');
 App.accessRule('https://explorer.coqui.cash');
 App.accessRule('https://www.mnzexplorer.com');
+App.accessRule('https://explorer.coqui.cash');
+App.accessRule('https://www.mnzexplorer.com');
+App.accessRule('http://78.47.108.168:3001');
+App.accessRule('http://88.99.227.213:3001');
 
 // Set PhoneGap/Cordova preferences.
 App.setPreference('BackgroundColor', '0xffffffff');
